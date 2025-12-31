@@ -1,0 +1,55 @@
+<h1>🎉 Happy Birthday Levi 🎉</h1>
+
+<p>
+Hey Levi 🤗<br><br>
+
+Today is all about celebrating <b>you</b> — your kindness,
+your smile, and the warmth you bring to people around you.<br><br>
+
+May this year give you peace, good health, and many moments
+that make you laugh without trying.<br><br>
+
+Sending you the biggest birthday hugs 🤍  
+Stay amazing, always.
+</p>
+
+<p><i>— Your friend 💙</i></p>
+<style>
+.rose-heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 26px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.4);
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+const emojis = ["🌹","❤️","💐","🌸"];
+
+function createRoseHeart() {
+  const span = document.createElement("span");
+  span.className = "rose-heart";
+  span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+  span.style.left = Math.random() * 100 + "vw";
+  span.style.animationDuration = (4 + Math.random() * 3) + "s";
+  document.body.appendChild(span);
+
+  setTimeout(() => {
+    span.remove();
+  }, 7000);
+}
+
+setInterval(createRoseHeart, 500);
+</script>
